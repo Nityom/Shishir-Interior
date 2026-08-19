@@ -20,7 +20,7 @@ export function SiteFooter() {
         <div><h3>Quick Links</h3><Link href="/">Home</Link><Link href="/about">About</Link><Link href="/service">Services</Link><Link href="/contact">Contact</Link></div>
         <div><h3>Reach Us</h3><p>Flat No- 33/A, Kriti Apartment,<br />Road No. 3H, New Patliputra<br />Colony, Patliputra Colony,<br />Patna, Bihar-800013</p><a href="mailto:info@shishirconsultants.in">info@shishirconsultants.in</a><a href="tel:+918603009912">+91 8603009912</a></div>
       </div>
-      <p className="copyright">Copyright © 2026 Shishir Consultants</p>
+      <div className="footer-meta"><p className="copyright">Copyright © 2026 Shishir Consultants</p><p>Developed by <a href="https://www.instagram.com/nityomrr/" target="_blank" rel="noopener noreferrer">Nityom Tikhe</a></p></div>
     </footer>
   );
 }
