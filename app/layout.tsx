@@ -44,14 +44,33 @@ export const metadata: Metadata = {
 
 const businessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   name: "Shishir Consultants Pvt. Ltd.",
+  description: "Interior design, architecture, construction, and project execution for residential and commercial spaces in Patna, Bihar.",
   url: siteUrl,
   logo: `${siteUrl}/images/logo.png`,
   image: `${siteUrl}/images/living-banner.jpg`,
   email: "info@shishirconsultants.in",
   telephone: "+91-8603009912",
   sameAs: ["https://www.instagram.com/shishir_consultants_pvt.ltd/"],
+  hasMap: "https://www.google.com/maps?q=Kriti+Apartment+New+Patliputra+Colony+Patna",
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 25.6270676,
+    longitude: 85.1074781,
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Patna",
+  },
+  knowsAbout: [
+    "Interior Design",
+    "Residential Interior Design",
+    "Commercial Interior Design",
+    "Architecture",
+    "Construction",
+    "Space Planning",
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Flat No- 33/A, Kriti Apartment, Road No. 3H, New Patliputra Colony, Patliputra Colony",

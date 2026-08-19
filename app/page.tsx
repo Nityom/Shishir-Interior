@@ -8,8 +8,8 @@ import { createPageMetadata } from "./seo";
 import TeamSection from "./team-section";
 
 export const metadata = createPageMetadata({
-  title: "Interior Design & Architecture in Patna",
-  description: "Shishir Consultants creates thoughtful residential and commercial interiors with architecture, construction, and complete project execution in Patna.",
+  title: "Interior Designer in Patna",
+  description: "Shishir Consultants is an interior design and architecture firm in Patna for residential and commercial interiors, construction, and complete project execution.",
   path: "/",
   absoluteTitle: true,
 });
@@ -38,10 +38,10 @@ export default function Home() {
       <section className="about" id="about">
         <p className="eyebrow">ABOUT US</p>
         <div className="about-content">
-          <h2>Starting from the 2008s, as the intricacy of structures continued to evolve, architecture transformed into a multi-disciplinary field with various specializations.</h2>
+          <h2>Interior designers in Patna creating thoughtful homes, workplaces, and commercial spaces.</h2>
           <div className="about-grid">
             <div className="about-image tall"><Image src="/images/about-one.jpeg" alt="Refined salon interior" fill sizes="(max-width: 700px) 100vw, 34vw" /></div>
-            <div className="about-side"><p>At Shishir Consultants Pvt. Ltd., we believe every space tells a story a narrative revealed through every design detail and spatial nuance. As dedicated interior specialists, we craft environments that echo individuality and endure as timeless expressions of the people who live within them</p><div className="about-image wide"><Image src="/images/about-two.jpeg" alt="Contemporary commercial interior" fill sizes="(max-width: 700px) 100vw, 34vw" /></div><Link className="arrow-link" href="/about"><span>→</span> Know More</Link></div>
+            <div className="about-side"><p>Shishir Consultants Pvt. Ltd. serves homeowners and businesses across Patna with interior design, space planning, architecture, construction, and project execution. From New Patliputra Colony, our team creates functional, personal spaces shaped around each client&apos;s needs, budget, and style.</p><div className="about-image wide"><Image src="/images/about-two.jpeg" alt="Contemporary commercial interior" fill sizes="(max-width: 700px) 100vw, 34vw" /></div><Link className="arrow-link" href="/about"><span>→</span> Know More</Link></div>
           </div>
         </div>
       </section>

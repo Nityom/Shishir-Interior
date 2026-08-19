@@ -30,7 +30,8 @@ export default function HeroCarousel() {
         <div className="hero-shade" />
         <div className="hero-socials"><span>{active.year}</span><a href="https://www.instagram.com/shishir_consultants_pvt.ltd/">Ig.</a></div>
         <div className="hero-copy">
-          <div className="hero-count"><strong>0{index + 1}</strong><span>/ 0{slides.length}</span></div><p>{active.category}</p><h1>{active.title}</h1>
+          <h1>Interior Designers &amp; Architects in Patna</h1>
+          <div className="hero-count"><strong>0{index + 1}</strong><span>/ 0{slides.length}</span></div><p>{active.category}</p><h2>{active.title}</h2>
           <Link className="arrow-link light" href={`/project/${active.slug}`}><span>→</span> View Project</Link>
         </div>
         <div className="slide-dots" aria-hidden="true">{slides.map((slide, i) => <i key={slide.slug} className={i === index ? "is-active" : ""} />)}</div>
