@@ -10,7 +10,7 @@ const services = ["Interior Design", "Exterior Design", "Commercial Design", "Ho
 
 const projects = [
   { title: "Urban Nest", image: "/images/urban-nest.jpg", description: "Crafted to enhance productivity, encourage collaboration, and spark creativity, this contemporary workspace redefines the benchmark for modern corporate interiors" },
-  { title: "Elevate Gym Space", image: "/images/elevate-gym.jpg", description: "Engineered for performance and designed with precision, this gym interior blends functionality with aesthetic energy—creating a space that motivates movement, supports wellness, and reflects the power of purposeful design" },
+  { title: "Elevate Gym Space", image: "/images/elevate-gym.avif", description: "Engineered for performance and designed with precision, this gym interior blends functionality with aesthetic energy—creating a space that motivates movement, supports wellness, and reflects the power of purposeful design" },
   { title: "The White Haven", image: "/images/white-haven.png", description: "White Haven embodies serene elegance—where a palette of soft whites and clean lines create a calm, airy sanctuary that reflects simplicity, sophistication, and timeless design." },
 ];
 

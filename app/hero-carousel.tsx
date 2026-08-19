@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const slides = [
   { slug: "urban-nest", title: "Urban Nest", image: "/images/urban-nest.jpg", year: "2019", category: "ARCHITECTURE" },
-  { slug: "elevate-gym-space", title: "Elevate Gym Space", image: "/images/elevate-gym.jpg", year: "2020", category: "INTERIOR DESIGN" },
+  { slug: "elevate-gym-space", title: "Elevate Gym Space", image: "/images/elevate-gym.avif", year: "2020", category: "INTERIOR DESIGN" },
   { slug: "the-white-haven", title: "The White Haven", image: "/images/white-haven.png", year: "2021", category: "EXTERIOR DESIGN" },
 ] as const;
 
