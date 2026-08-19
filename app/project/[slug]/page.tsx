@@ -1,10 +1,25 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Header from "../../header";
 import { getProject, projects } from "../../project-data";
+import { createPageMetadata } from "../../seo";
 import { ContactBand, SiteFooter } from "../../site-sections";
 
 export function generateStaticParams() { return projects.map(({ slug }) => ({ slug })); }
+
+export async function generateMetadata({ params }: PageProps<"/project/[slug]">): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProject(slug);
+  if (!project) notFound();
+
+  return createPageMetadata({
+    title: `${project.title} Interior Design Project`,
+    description: project.intro,
+    path: `/project/${project.slug}`,
+    image: project.image,
+  });
+}
 
 export default async function ProjectPage({ params }: PageProps<"/project/[slug]">) {
   const { slug } = await params;

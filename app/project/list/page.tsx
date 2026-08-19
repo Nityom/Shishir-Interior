@@ -2,7 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "../../header";
 import { projects } from "../../project-data";
+import { createPageMetadata } from "../../seo";
 import { ContactBand, SiteFooter } from "../../site-sections";
+
+export const metadata = createPageMetadata({
+  title: "Interior Design Project List",
+  description: "Browse Shishir Consultants projects across residential, commercial, wellness, salon, restaurant, and healthcare interior design.",
+  path: "/project/list",
+  image: "/images/urban-nest.jpg",
+});
 
 const descriptions: Record<string, string> = {
   "urban-nest": "Crafted to enhance productivity, encourage collaboration, and spark creativity, this contemporary workspace redefines the benchmark for modern corporate interiors",

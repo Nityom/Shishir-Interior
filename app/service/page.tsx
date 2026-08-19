@@ -1,7 +1,15 @@
 import Image from "next/image";
 import Header from "../header";
 import CostCalculator from "../cost-calculator";
+import { createPageMetadata } from "../seo";
 import { Experience, SiteFooter } from "../site-sections";
+
+export const metadata = createPageMetadata({
+  title: "Interior Design & Construction Services",
+  description: "Explore interior and exterior design, 2D planning, surveys, construction, commercial design, corporate design, and custom furniture services in Patna.",
+  path: "/service",
+  image: "/images/service-final.jpg",
+});
 
 const offerings = [
   ["Detailed Project Report", "To transform a standard apartment into a modern, aesthetic, and functional home tailored to the client’s lifestyle, incorporating natural lighting, ergonomic furniture, and sustainable materials.", "/images/modern-residence.png"],

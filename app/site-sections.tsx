@@ -25,10 +25,6 @@ export function SiteFooter() {
   );
 }
 
-export function RouteShell({ children }: { children: React.ReactNode }) {
-  return <>{children}<SiteFooter /></>;
-}
-
 export function Experience() {
   return (
     <section className="experience">

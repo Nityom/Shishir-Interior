@@ -1,7 +1,15 @@
 import Image from "next/image";
 import Header from "../../header";
 import { projects } from "../../project-data";
+import { createPageMetadata } from "../../seo";
 import { ContactBand, SiteFooter } from "../../site-sections";
+
+export const metadata = createPageMetadata({
+  title: "Interior Design Project Gallery",
+  description: "Explore residential, commercial, wellness, hospitality, and healthcare interiors designed and delivered by Shishir Consultants.",
+  path: "/project/gallery",
+  image: "/images/urban-nest.jpg",
+});
 
 // Repeating tile aspect ratios that produce the staggered/masonry column look.
 const tileAspect = [0.86, 0.86, 0.62, 0.6, 1.05, 0.86];

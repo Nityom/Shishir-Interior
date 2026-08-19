@@ -4,7 +4,15 @@ import CostCalculator from "./cost-calculator";
 import Header from "./header";
 import HeroCarousel from "./hero-carousel";
 import LeadPopup from "./lead-popup";
+import { createPageMetadata } from "./seo";
 import TeamSection from "./team-section";
+
+export const metadata = createPageMetadata({
+  title: "Interior Design & Architecture in Patna",
+  description: "Shishir Consultants creates thoughtful residential and commercial interiors with architecture, construction, and complete project execution in Patna.",
+  path: "/",
+  absoluteTitle: true,
+});
 
 const services = ["Interior Design", "Exterior Design", "Commercial Design", "Home Decoration", "Building Maintenance"];
 

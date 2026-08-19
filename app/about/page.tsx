@@ -1,8 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../header";
+import { createPageMetadata } from "../seo";
 import { ContactBand, Experience, SiteFooter } from "../site-sections";
 import TeamSection from "../team-section";
+
+export const metadata = createPageMetadata({
+  title: "About Our Interior Design Firm",
+  description: "Meet Shishir Consultants, a Patna-based team creating personal, functional, and enduring interior environments through design expertise and careful execution.",
+  path: "/about",
+  image: "/images/about-hero.png",
+});
 
 export default function AboutPage() {
   return <main className="route-page"><Header /><section className="route-hero about-hero"><div className="route-hero-copy"><span>ABOUT US</span><h1>Archiving Dreams, Building Reality</h1><p>At Shishir Consultants Pvt. Ltd., we are designers of dreams—bringing visions to life through our deep expertise in interior design and execution.</p><Link className="pill-link" href="/project/gallery"><b>→</b> View All Projects</Link></div><div className="about-hero-images"><div><Image src="/images/about-hero.png" alt="Shishir Consultants exterior" fill priority sizes="32vw" /></div><div><Image src="/images/salon.jpeg" alt="Shishir Consultants interior" fill priority sizes="62vw" /></div></div></section>
